@@ -1,0 +1,172 @@
+/* Styles pour le mode contraste élevé */
+.high-contrast {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-primary: #000000;
+    --text-secondary: #333333;
+    --border-color: #000000;
+    --link-color: #0000EE;
+    --link-visited: #551A8B;
+    --focus-color: #FF0000;
+}
+
+.high-contrast body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.high-contrast a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.high-contrast a:visited {
+    color: var(--link-visited);
+}
+
+.high-contrast button,
+.high-contrast input,
+.high-contrast select,
+.high-contrast textarea {
+    border: 2px solid var(--border-color);
+}
+
+.high-contrast *:focus {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+.high-contrast img {
+    filter: contrast(1.5);
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --border-color: #444444;
+    --link-color: #90caf9;
+    --link-visited: #ce93d8;
+    --focus-color: #64b5f6;
+}
+
+.dark-mode body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.dark-mode .bg-white {
+    background-color: var(--bg-secondary);
+}
+
+.dark-mode .text-gray-600,
+.dark-mode .text-gray-700,
+.dark-mode .text-gray-800 {
+    color: var(--text-secondary);
+}
+
+.dark-mode .border-gray-200,
+.dark-mode .border-gray-300 {
+    border-color: var(--border-color);
+}
+
+.dark-mode a {
+    color: var(--link-color);
+}
+
+.dark-mode a:visited {
+    color: var(--link-visited);
+}
+
+.dark-mode *:focus {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
+.dark-mode img {
+    filter: brightness(0.8) contrast(1.2);
+}
+
+/* Styles pour les éléments spécifiques en mode sombre */
+.dark-mode .bg-gray-50,
+.dark-mode .bg-gray-100 {
+    background-color: #2d2d2d;
+}
+
+.dark-mode .shadow-md,
+.dark-mode .shadow-lg {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Styles pour améliorer la lisibilité */
+body {
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+/* Styles pour les éléments interactifs */
+button,
+a,
+input,
+select,
+textarea {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Amélioration de la visibilité du focus pour tous les modes */
+*:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Styles pour les éléments de formulaire */
+input,
+select,
+textarea {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+/* Styles pour les boutons */
+button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+/* Styles pour les liens */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour les éléments de navigation */
+nav a {
+    padding: 0.5rem;
+}
+
+/* Styles pour les tableaux */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+}
+
+/* Styles pour les listes */
+ul,
+ol {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
