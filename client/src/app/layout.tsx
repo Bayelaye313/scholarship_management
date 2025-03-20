@@ -44,7 +44,7 @@ export default function RootLayout({
               pauseOnFocusLoss
               draggable
               pauseOnHover
-              limit={3} // Limiter le nombre de toasts affichés simultanément
+              limit={3} 
             />
             <AccessibilityWidget />
           </NotificationProvider>

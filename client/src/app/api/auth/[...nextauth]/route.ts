@@ -70,9 +70,9 @@ export const authOptions: NextAuthOptions = {
     },
     session: {
         strategy: "jwt",
-        maxAge: 30 * 24 * 60 * 60, // 30 jours
+        maxAge: 30 * 24 * 60 * 60,
     },
-    secret: process.env.NEXTAUTH_SECRET || "votre-secret-temporaire",
+    secret: process.env.NEXTAUTH_SECRET || "testNextAuth1234!",
     debug: process.env.NODE_ENV === "development",
 };
 
